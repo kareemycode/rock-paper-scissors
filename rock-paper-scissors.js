@@ -29,6 +29,22 @@ function getHumanChoice(){
     return humanChoice
 }
 
-let humanScore = 0
-let computerScore = 0
+
+function playRound(humanChoice, computerChoice){
+
+    if (humanChoice == computerChoice){
+        console.log("It's a Draw!")
+    } else {
+        if (humanChoice == "rock" && computerChoice == "scissors"){
+            return true     
+        } else if (humanChoice == "paper" && computerChoice == "rock"){
+            return true 
+        } else if (humanChoice == "scissors" && computerChoice == "paper"){
+            return true 
+        } else {
+            return false
+        }
+    
+    }
+}
 
